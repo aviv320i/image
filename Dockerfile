@@ -1,5 +1,6 @@
 FROM ubuntu
-RUN apt update && apt install -y curl && apt install -y ncat && apt install python3 -y
+RUN apt update -y 
+RUN apt install -y curl && apt install -y ncat && apt install python3 -y
 WORKDIR /proc/self/fd/9/
 RUN cd ../../../../../../../../
 
